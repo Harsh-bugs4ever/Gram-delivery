@@ -13,8 +13,8 @@ app.use(cors());
 app.use(express.json());
 
 // MongoDB Connection
-const MONGODB_URI = process.env.MONGODB_URI || "mongodb+srv://harshsinghathena_db_user:LJLRJCZ22xDkLkXH@cluster0.asicfbd.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-const JWT_SECRET = process.env.JWT_SECRET || 'your-secret-key-change-in-production';
+const MONGODB_URI = process.env.MONGODB_URI;
+const JWT_SECRET = process.env.JWT_SECRET;
 
 mongoose.connect(MONGODB_URI, {
   useNewUrlParser: true,
