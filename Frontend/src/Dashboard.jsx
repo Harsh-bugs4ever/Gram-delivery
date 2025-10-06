@@ -19,7 +19,7 @@ const Dashboard = ({ user }) => {
         });
         setStats(statsRes.data);
 
-        const itemsRes = await axios.get(`${process.env.REACT_APP_API_URL}/api/recent`, {
+        const itemsRes = await axios.get(`https://gram-delivery.onrender.com/api/recent`, {
           headers: { Authorization: `Bearer ${token}` },
         });
         setRecentItems(itemsRes.data);
