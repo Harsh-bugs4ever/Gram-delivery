@@ -12,7 +12,7 @@ const app = express();
 
 // ===== Middleware =====
 app.use(cors({
-  origin: 'https://gram-delivery.vercel.app/', // Replace with your frontend URL in production
+  origin: 'https://gram-delivery.vercel.app', // Replace with your frontend URL in production
   credentials: true
 }));
 app.use(express.json());
